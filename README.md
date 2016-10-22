@@ -1,9 +1,12 @@
 # md-practice-hackathon
 
-The source code for the MD Practice Hackathon, Oct. 21-23 2016.
+> By @cbracco and @ModernTek
 
-## Project #1 Instructions
+This repository contains our attempt at Project #1 of the [MD Practice Hackathon](https://study.moderndeveloper.com/new-updates/october_2016/practice-hackathon-details/). We have chosen the following four UI elements to create:
 
-### Build Four UI Elements (You Are Completing Future Assignments)
+- [Collapsible  (Accordion)](http://materializecss.com/collapsible.html)
+- [Modal ](http://materializecss.com/modals.html)
+- [Static Popover (with Dismiss)  ](http://getbootstrap.com/javascript/#dismiss-on-next-click)
+- [Wave ](http://materializecss.com/waves.html)
 
-Carefully study the code for each of the UI elements below and build any four of them from scratch, once you fully understand how each is constructed:   Bootstrap Elements: ScrollSpy, Static Popover (with Dismiss)  . Materialize Elements: Collapsible Dropdown , Material Box, Modal , Wave .
+[View the demo](http://cbracco.github.io/md-practice-hackathon/)
