@@ -9,4 +9,4 @@ This repository contains our attempt at Project #1 of the [MD Practice Hackathon
 - [Static Popover (with Dismiss)  ](http://getbootstrap.com/javascript/#dismiss-on-next-click)
 - [Wave ](http://materializecss.com/waves.html)
 
-[View the demo](http://cbracco.github.io/md-practice-hackathon/)
+[View the demo](https://cbracco.github.io/md-practice-hackathon/)
