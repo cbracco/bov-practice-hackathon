@@ -1,6 +1,6 @@
 # md-practice-hackathon
 
-The source code for the MD Practice Hackathon, Oct. 21-23, 2016.
+The source code for the MD Practice Hackathon, Oct. 21-23 2016.
 
 ## Project #1 Instructions
 
