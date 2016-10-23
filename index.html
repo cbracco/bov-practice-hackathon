@@ -8,14 +8,84 @@
   <link rel="stylesheet" href="./ui/modal/modal.css">
   <link rel="stylesheet" href="./ui/popover/popover.css">
   <link rel="stylesheet" href="./ui/wave/wave.css">
+  <!-- Demo Styles -->
+  <style>
+    body {
+      font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      margin: 0;
+    }
+
+    .demo {
+      margin: 1rem;
+      max-width: 800px;
+    }
+  </style>
 </head>
 <body>
-  <h1>MD Practice Hackathon, Oct. 21-23 2016</h1>
-  <h2>By <a href="https://github.com/cbracco">@cbracco</a> and <a href="https://github.com/ModernTek">@ModernTek</a></h2>
+  <div class="demo">
+    <header class="demo-header">
+      <h1>MD Practice Hackathon, Oct. 21-23 2016</h1>
+      <h2>By <a href="https://github.com/cbracco">@cbracco</a> and <a href="https://github.com/ModernTek">@ModernTek</a></h2>
+    </header>
+
+    <nav class="demo-nav">
+      <ul>
+        <li><a href="#demo-accordion">Accordion</a></li>
+        <li><a href="#demo-modal">Modal</a></li>
+        <li><a href="#demo-popover">Popover</a></li>
+        <li><a href="#demo-wave">Wave</a></li>
+      </ul>
+    </nav>
+
+    <main class="demo-main">
+      <!-- Accordion -->
+      <section class="demo-example" id="demo-accordion">
+        <h1>Accordion</h1>
+        <div class="accordion">
+          <div class="accordion-panel is-active">
+            <h1 class="accordion-toggle">First</h1>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+              <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+              <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+              <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <h1 class="accordion-toggle">Second</h1>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+              <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+              <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+              <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+            </div>
+          </div>
+          <div class="accordion-panel">
+            <h1 class="accordion-toggle">Third</h1>
+            <div class="accordion-content">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum enim iure laudantium libero odit quaerat temporibus, nisi ullam explicabo minus unde neque similique, pariatur tempora repellat alias. Quae, culpa, quam!</p>
+              <p>Et qui voluptate, quidem deserunt optio. Tenetur odit optio fuga, accusamus dolore totam voluptate enim blanditiis atque voluptates ab amet omnis eligendi quasi quaerat molestias dicta aliquam. Dignissimos, hic, at!</p>
+              <p>Facilis adipisci voluptatem quibusdam tempora, illo at mollitia velit iusto nostrum perferendis recusandae dolores inventore nam, iure, ratione. Laudantium eaque, omnis quam consequatur officia minus impedit eveniet laboriosam aliquam neque?</p>
+              <p>Cumque qui vero dignissimos, voluptatibus esse facere ad velit et omnis placeat magni soluta, aperiam dicta, quos modi laudantium praesentium. Debitis ut, repellendus assumenda sint. Architecto incidunt debitis ab ea!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="demo-footer">
+      <p><a href="https://github.com/cbracco/md-practice-hackathon">GitHub Repo</a></p>
+    </footer>
+  </div>
+
   <!-- Scripts -->
   <script src="./ui/accordion/accordion.js"></script>
   <script src="./ui/modal/modal.js"></script>
   <script src="./ui/popover/popover.js"></script>
   <script src="./ui/wave/wave.js"></script>
+  <script>
+    // Initialize scripts
+    accordion.init();
+  </script>
 </body>
 </html>
