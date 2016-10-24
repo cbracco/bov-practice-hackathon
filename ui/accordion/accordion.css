@@ -2,18 +2,18 @@
  * Accordion
  */
 
-/* Default */
+/* Container */
 .accordion {
   border: 1px solid #e5e5e5;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
 }
 
-.accordion-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Input */
+.accordion-input {
+  display: none;
 }
 
+/* Toggle */
 .accordion-toggle {
   box-sizing: border-box;
   display: block;
@@ -29,31 +29,49 @@
   text-align: left;
 }
 
-.accordion-content {
-  padding: 0 1rem;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.accordion-content > * {
-  margin: 1rem 0;
-}
-
-/* With JS initialized */
+/* Toggle: w/ JS */
+/* 1. Add transitions */
 .js-accordion .accordion-toggle {
-  transition: background-color 0.333s ease, box-shadow 0.333s ease;
+  transition: background-color 0.333s ease, box-shadow 0.333s ease; /* 1 */
 }
 
-.js-accordion .accordion-content {
-  border-bottom: 0;
-  transition: max-height 0.5s ease, opacity 0.5s linear;
-}
-
-.js-accordion .accordion-panel.is-active .accordion-toggle {
+/* Toggle: Active State */
+.accordion-input:checked + .accordion-toggle,                /* No JS */
+.js-accordion .accordion-panel.is-active .accordion-toggle { /* w/ JS */
   background-color: #fafafa;
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.15);
 }
 
-.js-accordion .accordion-panel.is-transitioning .accordion-toggle + *,
-.js-accordion .accordion-panel.is-active .accordion-toggle + * {
+/* Content */
+/* 1. Hide when JS in not included */
+.accordion-content {
+  display: none; /* 1 */
+  padding: 0 1rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Content: Inner Elements */
+.accordion-content > * {
+  margin: 1rem 0;
+}
+
+/* Content: w/ JS */
+/* 1. Reset `display` property */
+/* 2. Add transitions */
+.js-accordion .accordion-content {
+  display: block; /* 1 */
+  border-bottom: 0;
+  transition: max-height 0.5s ease, opacity 0.5s linear;
+}
+
+/* Content: Active State */
+/* 1. Show content */
+.accordion-input:checked ~ .accordion-content { /* No JS */
+  display: block; /* 1 */
+}
+
+.accordion-input:checked ~ .accordion-content,                         /* No JS */
+.js-accordion .accordion-panel.is-transitioning .accordion-toggle + *, /* w/ JS */
+.js-accordion .accordion-panel.is-active .accordion-toggle + * {       /* w/ JS */
   border-bottom: 1px solid #e5e5e5;
 }

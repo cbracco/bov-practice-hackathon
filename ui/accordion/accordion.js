@@ -32,6 +32,7 @@
   var defaults = {
     initClass: 'js-accordion',
     accordionSelector: '.accordion',
+    inputSelector: '.accordion-input',
     toggleSelector: '.accordion-toggle',
     panelSelector: '.accordion-panel',
     panelActiveClass: 'is-active',
@@ -385,8 +386,20 @@
       var panels = accordions[i].querySelectorAll(settings.panelSelector);
 
       for (var j = 0; j < panels.length; j++) {
+        // Remove the input element
+        var input = panels[j].querySelector(settings.inputSelector);
+        panels[j].removeChild(input);
+
         // Get the panel content element
         var content = panels[j].querySelector(settings.contentSelector);
+
+        // Change toggle element to a <button>
+        var toggle = panels[j].querySelector(settings.toggleSelector);
+        var newToggle = document.createElement('button');
+        newToggle.innerHTML = toggle.innerHTML;
+        newToggle.className += settings.toggleSelector.slice(1);
+        panels[j].insertBefore(newToggle, toggle);
+        panels[j].removeChild(toggle);
 
         // If panel has active class on init, set open styles
         if (panels[j].classList.contains(settings.panelActiveClass)) {
