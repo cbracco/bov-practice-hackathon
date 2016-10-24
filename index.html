@@ -14,7 +14,6 @@
       font: 400 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
       margin: 0;
     }
-
     .demo {
       margin: 1rem;
       max-width: 800px;
@@ -27,7 +26,6 @@
       <h1>MD Practice Hackathon, Oct. 21-23 2016</h1>
       <h2>By <a href="https://github.com/cbracco">@cbracco</a> and <a href="https://github.com/ModernTek">@ModernTek</a></h2>
     </header>
-
     <nav class="demo-nav">
       <ul>
         <li><a href="#demo-accordion">Accordion</a></li>
@@ -36,7 +34,6 @@
         <li><a href="#demo-wave">Wave</a></li>
       </ul>
     </nav>
-
     <main class="demo-main">
       <!-- Accordion -->
       <section class="demo-example" id="demo-accordion">
@@ -74,13 +71,39 @@
           </div>
         </div>
       </section>
+      <!-- Popover -->
+      <section class="demo-example" id="demo-popover">
+        <h1>Popover</h1>
+        <div class="popover popover-left">
+          <span class="popover-title">Popover left</span>
+          <p>This is left content</p>
+        </div>
+        <div class="popover popover-right">
+          <span class="popover-title">Popover right</span>
+          <p>This is right content</p>
+        </div>
+        <div class="popover popover-top">
+          <span class="popover-title">Popover top</span>
+          <p class="popover-content">This is top content</p>
+        </div>
+        <div class="popover popover-bottom">
+          <span class="popover-title">Popover bottom</span>
+          <p>This is bottom content</p>
+        </div>
+      </section>
+      <!-- Wave -->
+      <section class="demo-example" id="demo-wave">
+         <h1>Wave</h1>
+           <div class="wrap">
+             <span class="waveText">WAVE</span>
+             <div class="wave"></div>
+           </div>
+       </section>
     </main>
-
     <footer class="demo-footer">
       <p><a href="https://github.com/cbracco/md-practice-hackathon">GitHub Repo</a></p>
     </footer>
   </div>
-
   <!-- Scripts -->
   <script src="./ui/accordion/accordion.js"></script>
   <script src="./ui/modal/modal.js"></script>
