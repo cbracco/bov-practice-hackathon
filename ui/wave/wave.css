@@ -1,5 +1,4 @@
-.wave {}
-body {
+.wave {
   height: 100vh;
   background-color: green; background-image:
     linear-gradient(
