@@ -23,7 +23,10 @@
   var accordion = {};
 
   // Define feature test - http://stackoverflow.com/q/22172924
-  var supports = 'querySelector' in document && 'addEventListener' in root && 'classList' in document.createElement('_') && 'getComputedStyle' in window;
+  var supports =
+    'querySelector' in document &&
+    'addEventListener' in root &&
+    'classList' in document.createElement('_');
 
   // Define default settings
   var defaults = {
