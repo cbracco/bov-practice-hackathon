@@ -66,7 +66,7 @@ The modal UI element is useful for overlaying subordinate content above the main
 The HTML for this UI element is as follows:
 
 ```html
-<a class="modal-trigger" href="#openModal1">Open Modal</a>
+<a class="modal-toggle" href="#openModal1">Open Modal</a>
 <div class="modal" id="openModal1">
   <div class="modal-container">
     <a class="modal-close" href="#closeModal1">
@@ -93,7 +93,7 @@ Make sure to also include the required CSS in your web page, like so:
     <link rel="stylesheet" href="./path/to/modal.css">
   </head>
   <body>
-    <a class="modal-trigger" href="#openModal1">...</div>
+    <a class="modal-toggle" href="#openModal1">...</div>
     <div class="modal" id="openModal1">...</div>
   </body>
 </html>

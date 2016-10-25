@@ -2,8 +2,8 @@
  * Modal
  */
 
-/* Trigger */
-.modal-trigger {
+/* Toggle */
+.modal-toggle {
   display: inline-block;
   vertical-align: middle;
   padding: 0.5rem 1rem;
@@ -16,9 +16,9 @@
   white-space: nowrap;
 }
 
-.modal-trigger:hover,
-.modal-trigger:active,
-.modal-trigger:focus {
+.modal-toggle:hover,
+.modal-toggle:active,
+.modal-toggle:focus {
   background-color: #ccc;
 }
 
