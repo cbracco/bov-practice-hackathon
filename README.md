@@ -70,7 +70,7 @@ The HTML for this UI element is as follows:
 <div class="modal" id="openModal1">
   <div class="modal-container">
     <a class="modal-close" href="#closeModal1">
-      <span class="modal-close-icon">&#10006;</span>
+      <span class="modal-close-icon">&times;</span>
     </a>
     <div class="modal-content">
       <h1 class="modal-heading">Modal Heading</h1>
