@@ -67,7 +67,7 @@ The HTML for this UI element is as follows:
 
 ```html
 <a class="modal-trigger" href="#openModal1">Open Modal</a>
-<div id="openModal1" class="modal">
+<div class="modal" id="openModal1">
   <div class="modal-container">
     <a class="modal-close" href="#closeModal1">&times;</a>
     <div class="modal-content">
@@ -92,7 +92,7 @@ Make sure to also include the required CSS in your web page, like so:
   </head>
   <body>
     <a class="modal-trigger" href="#openModal1">...</div>
-    <div id="openModal1" class="modal">...</div>
+    <div class="modal" id="openModal1">...</div>
   </body>
 </html>
 ```
