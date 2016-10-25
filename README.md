@@ -69,7 +69,9 @@ The HTML for this UI element is as follows:
 <a class="modal-trigger" href="#openModal1">Open Modal</a>
 <div class="modal" id="openModal1">
   <div class="modal-container">
-    <a class="modal-close" href="#closeModal1">&times;</a>
+    <a class="modal-close" href="#closeModal1">
+      <span class="modal-close-icon">&#10006;</span>
+    </a>
     <div class="modal-content">
       <h1 class="modal-heading">Modal Heading</h1>
       <div class="modal-body">

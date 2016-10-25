@@ -36,6 +36,7 @@
   pointer-events: none;
 }
 
+/* `:target` is only supported in IE9 and above */
 .modal:target {
   opacity: 1;
   pointer-events: auto;
@@ -55,33 +56,41 @@
   position: absolute;
   top: -1rem;
   right: -1rem;
-  text-decoration: none;
-  border-radius: 50%;
-  border: 2px solid #fff;
   box-sizing: border-box;
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  font-size: 1.5rem;
-  line-height: 1rem;
-  padding: 0.333rem;
+  text-decoration: none;
 }
 
-.modal-close:hover,
-.modal-close:active,
-.modal-close:focus {
+/* Close button icon */
+.modal-close-icon {
+  display: block;
+  font-family: Arial;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  width: 2rem;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background-color: #222;
+  color: #fff;
+}
+
+.modal-close:hover .modal-close-icon,
+.modal-close:active .modal-close-icon,
+.modal-close:focus .modal-close-icon {
   background-color: #777;
 }
 
+/* Content */
 .modal-content {
   padding: 1rem;
 }
 
+/* Heading */
 .modal-heading {
   margin: 0 0 1rem;
 }
 
+/* Body */
 .modal-body > *:last-child {
   margin-bottom: 0;
 }
