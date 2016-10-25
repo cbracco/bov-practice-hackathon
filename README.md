@@ -59,11 +59,43 @@ Make sure to also include the required CSS and JS in your web page and initializ
 
 ### Modal
 
-[Description]
+The modal UI element is useful for overlaying subordinate content above the main window, for the purpose of diverting the user’s focus to a specific task or notifying them of important information before proceeding back to the main window.
 
-[Structure]
+#### Structure
 
-[Assets]
+The HTML for this UI element is as follows:
+
+```html
+<a class="modal-trigger" href="#openModal1">Open Modal</a>
+<div id="openModal1" class="modal">
+  <div class="modal-container">
+    <a class="modal-close" href="#closeModal1">&times;</a>
+    <div class="modal-content">
+      <h1 class="modal-heading">Modal Heading</h1>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad nostrum aut architecto, odio, ratione eum debitis quos atque excepturi, voluptatum dignissimos ullam voluptatibus neque doloremque repellendus quis modi porro!</p>
+        <p>Architecto repellendus sit cumque nobis quasi aliquid provident, consequatur commodi odit suscipit saepe hic. Odit sunt id totam omnis excepturi repudiandae fuga laboriosam beatae. Dolor aperiam, est sunt omnis nisi.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+#### Assets
+
+Make sure to also include the required CSS in your web page, like so:
+
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="./path/to/modal.css">
+  </head>
+  <body>
+    <a class="modal-trigger" href="#openModal1">...</div>
+    <div id="openModal1" class="modal">...</div>
+  </body>
+</html>
+```
 
 [View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-modal)
 
