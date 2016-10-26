@@ -59,64 +59,116 @@ Make sure to also include the required CSS and JS in your web page and initializ
 
 ### Modal
 
-The modal UI element is useful for overlaying subordinate content above the main window, for the purpose of diverting the user’s focus to a specific task or notifying them of important information before proceeding back to the main window.
+[Description]
 
-#### Structure
+[Structure]
 
-The HTML for this UI element is as follows:
-
-```html
-<a class="modal-toggle" href="#openModal1">Open Modal</a>
-<div class="modal" id="openModal1">
-  <div class="modal-container">
-    <a class="modal-close" href="#closeModal1">
-      <span class="modal-close-icon">&times;</span>
-    </a>
-    <div class="modal-content">
-      <h1 class="modal-heading">Modal Heading</h1>
-      <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ad nostrum aut architecto, odio, ratione eum debitis quos atque excepturi, voluptatum dignissimos ullam voluptatibus neque doloremque repellendus quis modi porro!</p>
-        <p>Architecto repellendus sit cumque nobis quasi aliquid provident, consequatur commodi odit suscipit saepe hic. Odit sunt id totam omnis excepturi repudiandae fuga laboriosam beatae. Dolor aperiam, est sunt omnis nisi.</p>
-      </div>
-    </div>
-  </div>
-</div>
-```
-
-#### Assets
-
-Make sure to also include the required CSS in your web page, like so:
-
-```html
-<html>
-  <head>
-    <link rel="stylesheet" href="./path/to/modal.css">
-  </head>
-  <body>
-    <a class="modal-toggle" href="#openModal1">...</div>
-    <div class="modal" id="openModal1">...</div>
-  </body>
-</html>
-```
+[Assets]
 
 [View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-modal)
 
 ### Popover
 
-[Description]
+Add small overlay content, like those found in iOS, to any element for housing secondary information.
+This is static popover. I did not finish it. The *dismiss* should be added.
 
-[Structure]
+####Structure
+The HTML for this UI element is as follows:
 
-[Assets]
+```html
+
+<html>
+  <head>
+    <link rel="stylesheet" href="./path/to/popover.css">
+      </head>
+      <body>
+        <div class="popover popover-left">
+          <span class="popover-title">Popover left</span>
+          <p>This is left content</p>
+        </div>
+        <div class="popover popover-right">
+          <span class="popover-title">Popover right</span>
+          <p>This is right content</p>
+        </div>
+        <div class="popover popover-top">
+          <span class="popover-title">Popover top</span>
+          <p class="popover-content">This is top content</p>
+        </div>
+        <div class="popover popover-bottom">
+          <span class="popover-title">Popover bottom</span>
+          <p>This is bottom content</p>
+        </div>
+      </body>
+    </html>  
+```
+
+
+####Assets
+Make sure to also include the required CSS in your web page and initialize it, like so:
+
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="./path/to/popover.css">
+  </head>
+  <body>
+    <div class="popover">...</div>
+  </body>
+</html>
+```
 
 [View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-popover)
 
 ### Wave
 
-[Description]
+Wave allows to create the ink effect outlined in Material Design. This is an atempt to create waves with Material Design which allows to implement the “ripple” effect using just CSS. This work based on this [article] (https://ghinda.net/article/css-ripple-material-design/). This work is not finished, but I was able to accomplish some "ripple" effect.
 
-[Structure]
+####The HTML structure for this UI element as follows:
 
-[Assets]
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="./path/to/wave.css">
+      </head>
+      <body>
+        <div class="button">
+          <scan class="title">wave</scan>
+          <div>
+            <input type="checkbox" name="r" id="r1">
+              <label for="r1"></label>
+          </div>
+          <div></div>
+          <div> 
+            <input type="radio" name="r" id="r2">
+              <label for="r2"></label>
+          </div>
+          <div></div>
+          <div>
+            <input type="radio" name="r" id="r3">
+              <label for="r3"></label>
+          </div>
+          <div></div>
+          <div> 
+            <input type="radio" name="r" id="r4">
+              <label for="r4"></label>
+          </div>
+        </body>
+ </html>    
+```
+
+###Assets
+Make sure to also include the required CSS in your web page and initialize it, like so:
+
+```html
+<html>
+  <head>
+    <link rel="stylesheet" href="./path/to/wave.css">
+  </head>
+  <body>
+    <div class="button">...</div>
+  </body>
+</html>
+```
 
 [View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-wave)
+
