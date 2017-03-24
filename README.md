@@ -1,10 +1,10 @@
-# md-practice-hackathon
+# bov-practice-hackathon
 
 > By @cbracco and @ModernTek
 
 ## Overview
 
-This repository contains our attempt at Project #1 of the [MD Practice Hackathon](https://study.moderndeveloper.com/new-updates/october_2016/practice-hackathon-details/). We have chosen the following four UI elements to create:
+This repository contains our attempt at Project #1 of the [Bov Academy Practice Hackathon](https://study.moderndeveloper.com/new-updates/october_2016/practice-hackathon-details/). We have chosen the following four UI elements to create:
 
 - [Accordion](http://materializecss.com/collapsible.html)
 - [Modal ](http://materializecss.com/modals.html)
@@ -55,7 +55,7 @@ Make sure to also include the required CSS and JS in your web page and initializ
 </html>
 ```
 
-[View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-accordion)
+[View the demo](https://cbracco.github.io/bov-practice-hackathon/#demo-accordion)
 
 ### Modal
 
@@ -99,7 +99,7 @@ Make sure to also include the required CSS in your web page, like so:
 </html>
 ```
 
-[View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-modal)
+[View the demo](https://cbracco.github.io/bov-practice-hackathon/#demo-modal)
 
 ### Popover
 
@@ -109,7 +109,7 @@ Make sure to also include the required CSS in your web page, like so:
 
 [Assets]
 
-[View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-popover)
+[View the demo](https://cbracco.github.io/bov-practice-hackathon/#demo-popover)
 
 ### Wave
 
@@ -119,4 +119,4 @@ Make sure to also include the required CSS in your web page, like so:
 
 [Assets]
 
-[View the demo](https://cbracco.github.io/md-practice-hackathon/#demo-wave)
+[View the demo](https://cbracco.github.io/bov-practice-hackathon/#demo-wave)
